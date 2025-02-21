@@ -22,6 +22,8 @@ body {
     background-color: #1f2937;
     color: white;
     padding: 10px;
+    padding-left:250px;
+    padding-right: 250px;
 }
 
 .header_logo {
@@ -41,7 +43,7 @@ body {
 .main_content {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+   
 }
 
 .top {
@@ -51,11 +53,33 @@ body {
     background-color: #1f2937;
     color: white;
     padding: 50px;
+    padding-left:250px;
+    padding-right: 250px;
 }
 
 .left_top {
     flex: 1 1 300px;
     padding: 20px;
+}
+
+.right_top {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+}
+
+.image img {
+    max-width: 100%;
+    height:auto;
 }
 
 .main_heading {
@@ -81,20 +105,14 @@ body {
     font-weight: 900;
 }
 
-.right_top {
-    flex: 1 1 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid white;
-    background-color: darkgrey;
-    padding: 20px;
-}
+
 
 .middle {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    padding-left:250px;
+    padding-right: 250px;
 }
 
 .heading {
@@ -119,21 +137,27 @@ body {
 }
 
 .illustration {
-    width: 125px;
-    height: 125px;
-    border: 2px solid blue;
-    border-radius: 5px;
+    width: 150px;
+    height: 175px;
     margin: 0 auto 10px;
 }
 
+.illustration img {
+    max-width:100%;
+    height: auto;
+
+}
+
 .subtext {
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .bottom {
     background-color: #e5e7eb;
     text-align: center;
     padding: 50px 20px;
+    padding-left:250px;
+    padding-right: 250px;
 }
 
 .quote {
@@ -141,10 +165,15 @@ body {
     font-style: italic;
     color: #1f2937;
     padding-bottom: 15px;
+    padding-left:250px;
+    padding-right: 250px;
 }
 
 .author {
     font-weight: bold;
+    text-align: end;
+    padding-left:250px;
+    padding-right: 250px;
 }
 
 .footer {
@@ -154,6 +183,8 @@ body {
     background-color: blue;
     color: white;
     padding: 20px;
+    padding-left:250px;
+    padding-right: 250px;
 }
 
 .footer_content1 {
@@ -167,33 +198,3 @@ body {
     padding: 10px;
 }
 
-/* Media Queries */
-@media (min-width: 768px) {
-    .header, .top, .middle, .bottom, .footer {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .main_heading {
-        font-size: 48px;
-    }
-
-    .quote {
-        font-size: 28px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .header, .top, .middle, .bottom, .footer {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
-    .main_heading {
-        font-size: 56px;
-    }
-
-    .quote {
-        font-size: 32px;
-    }
-}
